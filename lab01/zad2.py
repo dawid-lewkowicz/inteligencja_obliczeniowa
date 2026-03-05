@@ -24,7 +24,6 @@ while not trafiony:
 
     kat_rad = math.radians(kat_stopnie)
 
-    # odległość ze wzoru
     czesc1 = v0 * math.sin(kat_rad)
     czesc2 = math.sqrt((v0**2) * (math.sin(kat_rad)**2) + 2 * g * h)
     czesc3 = (v0 * math.cos(kat_rad)) / g
@@ -33,7 +32,7 @@ while not trafiony:
     
     print(f"Pocisk poleciał na odległość {odleglosc:.1f}")
     
-    if abs(odleglosc - cel) <= 5: # | działanie |, wartość bezwzględna
+    if abs(odleglosc - cel) <= 5: 
         print(f"Cel trafiony w {proby} próbach")
         trafiony = True
     else:
