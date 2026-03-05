@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 h = 100.0  
 v0 = 50.0  
-g = 9.81   
+g = 9.81   # przyspiesznei ziemskie
 
 cel = random.randint(50, 340)
 print(f"Cel znajduje się w odległości {cel} metrów")
@@ -33,7 +33,7 @@ while not trafiony:
     
     print(f"Pocisk poleciał na odległość {odleglosc:.1f}")
     
-    if abs(odleglosc - cel) <= 5:
+    if abs(odleglosc - cel) <= 5: # | działanie |, wartość bezwzględna
         print(f"Cel trafiony w {proby} próbach")
         trafiony = True
     else:
