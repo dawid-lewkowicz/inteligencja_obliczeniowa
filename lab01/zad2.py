@@ -17,13 +17,13 @@ kat_rad = 0
 while not trafiony:
     proby += 1
     try:
-        kat_stopnie = float(input("\nPodaj kąt: "))
+        kat_stopnie = float(input("Podaj kąt: "))
     except ValueError:
         print("To nie jest prawidłowa liczba")
         continue
-    
+
     kat_rad = math.radians(kat_stopnie)
-    
+
     # odległość ze wzoru
     czesc1 = v0 * math.sin(kat_rad)
     czesc2 = math.sqrt((v0**2) * (math.sin(kat_rad)**2) + 2 * g * h)
@@ -31,15 +31,15 @@ while not trafiony:
     
     odleglosc = (czesc1 + czesc2) * czesc3
     
-    print(f"Pocisk poleciał na odległość {odleglosc:.2f}")
+    print(f"Pocisk poleciał na odległość {odleglosc:.1f}")
     
     if abs(odleglosc - cel) <= 5:
-        print(f"\nCel trafiony w {proby} próbach")
+        print(f"Cel trafiony w {proby} próbach")
         trafiony = True
     else:
         print("Pudło")
 
-print("\nGeneruję trajektorię lotu zwycięskiego pocisku...")
+print("Generuję trajektorię lotu zwycięskiego pocisku...")
 
 x_punkty = []
 y_punkty = []

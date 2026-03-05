@@ -26,4 +26,4 @@ elif (fizyczna_fala > 0.5 and emocjonalna_fala > 0.5) or (fizyczna_fala > 0.5 an
 else:
     print(f"{imie}, dziś masz umiarkowany dzień :)")
 
-#15 min
+# <20 min

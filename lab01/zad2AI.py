@@ -18,7 +18,7 @@ cos_a = 0  # Zmienna do przechowania cosinusa dla wykresu
 while not trafiony:
     proby += 1
     try:
-        kat_stopnie = float(input("\nPodaj kąt (0-89): "))
+        kat_stopnie = float(input("\nPodaj kąt (1-89): "))
         # Zabezpieczenie przed dzieleniem przez zero (cos(90) = 0) oraz kątami ujemnymi
         if kat_stopnie < 0 or kat_stopnie >= 90:
             print("Kąt strzału musi być z przedziału od 0 do 89 stopni.")
