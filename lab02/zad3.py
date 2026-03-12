@@ -4,7 +4,6 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 
 df = pd.read_csv("iris_big.csv", sep=",")
 
-# Zakładamy, że df to Twój oczyszczony DataFrame z Zadania 1
 # Wybieramy dwie konkretne kolumny do porównania (zgodnie z instrukcją)
 cols_to_scale = ['sepal length (cm)', 'sepal width (cm)']
 data = df[cols_to_scale]
