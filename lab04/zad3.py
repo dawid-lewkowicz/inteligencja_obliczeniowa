@@ -65,7 +65,7 @@ print(f"Accuracy: {accuracy_score(y_val, preds)}")
 print(f"Precision: {precision_score(y_val, preds)}")
 print(f"Recall: {recall_score(y_val, preds)}")
 
-print("\nMacierz błędu (Confusion Matrix):")
+print("\nConfusion Matrix:")
 cm_df = pd.DataFrame(
     confusion_matrix(y_val, preds), 
     index=["Faktycznie Zdrowy", "Faktycznie Chory"], 
