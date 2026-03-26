@@ -53,7 +53,7 @@ print(f"Strata bez treningu: {L:.3f}")
 print(f"w5={siec.w5:.3f} w6={siec.w6:.3f}")
 
 siec_pod_nauke = SimpleNet()
-for _ in range(1):
+for _ in range(10):
     siec_pod_nauke.forward(0.6, 0.1)
     L = siec_pod_nauke.train(0.8)
 

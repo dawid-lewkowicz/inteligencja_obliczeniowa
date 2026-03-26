@@ -25,7 +25,7 @@ criterion = nn.CrossEntropyLoss()
 
 train_losses, val_losses, train_accs, val_accs = [], [], [], []
 
-for epoch in range(100):
+for tura in range(100):
     model.train()
     optimizer.zero_grad()
     

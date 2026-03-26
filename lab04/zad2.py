@@ -29,13 +29,13 @@ model = nn.Sequential(
 )
 
 optimizer = torch.optim.Adam(model.parameters(), lr=0.01) # sprawdzaie wyników
-criterion = nn.CrossEntropyLoss()
+criterion = nn.CrossEntropyLoss() #kara za błąd
 
 train_losses, val_losses, train_accs, val_accs = [], [], [], []
 
-for epoch in range(100):
+for tura in range(100):
     model.train()
-    optimizer.zero_grad()
+    optimizer.zero_grad() #resetowanie pamięci o błędach
 
     przepuszczone_dane = model(X_train)
     wynik_porównania = criterion(przepuszczone_dane, y_train)
